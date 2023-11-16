@@ -1,64 +1,94 @@
 
 public class Main {
     public static void main(String[] args) {
-        // Task 1
-        var dog = 8;
-        var cat = 36;
-        var paper = 763789;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        //Задача 1
+        int varInt = 110_000;
+        byte varByte = -5;
+        short varShort = 1_000;
+        long varLong = 100_000_000_000L;
+        float varFloat = 10.20f;
+        double farDouble = 10.123456789;
 
-        //Task 2
-        dog += 4;
-        cat += 4;
-        paper += 4;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        System.out.println("Значение переменной varInt с типом int равно " + varInt);
+        System.out.println("Значение переменной varByte с типом byte равно " + varByte);
+        System.out.println("Значение переменной varShort с типом short равно " + varShort);
+        System.out.println("Значение переменной varLong с типом long равно " + varLong);
+        System.out.println("Значение переменной varFloat с типом float равно " + varFloat);
+        System.out.println("Значение переменной farDouble с типом double равно " + farDouble);
 
-        //Task 3
-        dog -= 3.5;
-        cat -= 1.6;
-        paper -= 7639;
-        System.out.println(dog);
-        System.out.println(cat);
-        System.out.println(paper);
+        //Задача 2
+        float f = 27.12f;
+        long l = 987_678_965_549L;
+        float ff = 2.786f;
+        short sh1 = 569;
+        short sh2 = -159;
+        short sh3 = 27897;
+        byte b = 67;
 
-        //Task 4
-        var friend = 19;
-        System.out.println(friend);
-        friend += 2;
-        System.out.println(friend);
-        friend /= 7;
-        System.out.println(friend);
+        //Задача 3
+        byte firstClass = 23;
+        byte twoClass = 27;
+        byte thirdClass = 30;
+        short numberSheetPaper = 480;
+        System.out.println("На каждого ученика рассчитано " + numberSheetPaper / (firstClass + twoClass + thirdClass) + " листов бумаги");
 
-        //Task 5
-        var frog = 3.5;
-        frog *= 10;
-        System.out.println(frog);
-        frog /= 3.5;
-        System.out.println(frog);
-        frog += 4;
-        System.out.println(frog);
+        //Задача 4
+        byte outputPerMinute = 16 / 2;
+        byte minutes = 20;
+        short oneDay = 24 * 60;
+        int threeDays = oneDay * 3;
+        int oneMonth = oneDay * 30;
+        System.out.println("За 20 минут машина произвела " + outputPerMinute * minutes + " штук бутылок");
+        System.out.println("За в сутки машина произвела " + outputPerMinute * oneDay + " штук бутылок");
+        System.out.println("За за 3 дня машина произвела " + outputPerMinute * threeDays + " штук бутылок");
+        System.out.println("За за 1 месяц машина произвела " + outputPerMinute * oneMonth + " штук бутылок");
 
-        //Task 6
-        var weightBoxer1 = 78.2;
-        var weightBoxer2 = 82.7;
-        System.out.println(weightBoxer1 + weightBoxer2);
-        System.out.println(weightBoxer2 - weightBoxer1);
+        //Задача 5
+        byte whitePaint = 2;
+        byte brownPaint = 4;
+        int numberClasses = 120;
+        int numberCansWhite = numberClasses * whitePaint;
+        int numberCansBrown = numberClasses * brownPaint;
 
-        //Task 7
-        System.out.println(weightBoxer2 - weightBoxer1);
-        System.out.println(weightBoxer2 % weightBoxer1);
+        System.out.println("В школе, где " + numberClasses + " классов, нужно " + numberCansWhite + " банок белой краски и "
+                + numberCansBrown + " банок коричневой краски");
 
-        //Task 8
-        var timeWork = 640;
-        var dayWork = 8;
-        var employeeNumber = timeWork / dayWork;
-        System.out.println("Всего работников в компании — " + employeeNumber);
-        employeeNumber += 94;
-        System.out.println("Если в компании работает " + employeeNumber + " человек, " +
-                "то всего " + employeeNumber * dayWork + " часов работы может быть поделено между сотрудниками");
+        //Задача 6
+        int bananas = 80;
+        int milk = 105;
+        int iceCreamPlombir = 100;
+        int eggs = 70;
+
+        float sportsBreakfastRecipe = bananas * 5 + milk * 2 + iceCreamPlombir * 2 + eggs * 4;
+        System.out.println("Вес в граммах спортзавтрака " + sportsBreakfastRecipe);
+        System.out.println("Вес в килограммах спортзавтрака " + sportsBreakfastRecipe / 1000);
+        //Задача 7
+        int daysToGoal = 0;
+        int ideaWeigh = 7; // кг.
+        int weightDay1 = 250; //  грамм.
+        int weightDay2 = 500; //  грамм.
+
+        daysToGoal = ideaWeigh * 1000 / weightDay1;
+        System.out.println("Если терять в весе по " + weightDay1 + " в день, то сбросить " + ideaWeigh + " кг. можно будет через " + daysToGoal + " дней");
+        daysToGoal = ideaWeigh * 1000 / weightDay2;
+        System.out.println("Если терять в весе по " + weightDay2 + " в день, то сбросить " + ideaWeigh + " кг. можно будет через " + daysToGoal + " дней");
+
+        //Задача 8
+        double salaryCristinaOld = 76_230;
+        double salaryDenisOld = 83_690;
+        double salaryMariaOld = 67_760;
+        float salaryIncreaseRate = 0.1f;
+        double salaryMariaNew = salaryMariaOld * salaryIncreaseRate + salaryMariaOld;
+        double salaryCristinaNew = salaryCristinaOld * salaryIncreaseRate + salaryCristinaOld;
+        double salaryDenisONew = salaryDenisOld * salaryIncreaseRate + salaryDenisOld;
+
+
+        System.out.println("Маша теперь получает " + String.format("%.2f", salaryMariaNew) +
+                " рублей. Годовой доход вырос на " + String.format("%.2f", (salaryMariaNew * 12) - (salaryMariaOld * 12)) + " рублей.");
+        System.out.println("Кристина теперь получает " + String.format("%.2f", salaryCristinaNew) +
+                " рублей. Годовой доход вырос на " + String.format("%.2f", (salaryCristinaNew * 12) - (salaryCristinaOld * 12)) + " рублей.");
+        System.out.println("Денис теперь получает " + String.format("%.2f", salaryDenisONew) +
+                " рублей. Годовой доход вырос на " + String.format("%.2f", (salaryDenisONew * 12) - (salaryDenisOld * 12)) + " рублей.");
+
     }
 }
