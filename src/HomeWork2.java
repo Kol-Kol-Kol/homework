@@ -1,5 +1,5 @@
 
-public class Main {
+public class HomeWork2 {
     public static void main(String[] args) {
         //Задача 1
         int varInt = 110_000;
