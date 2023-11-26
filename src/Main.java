@@ -31,8 +31,8 @@ public class Main {
         int ageHuman = 10; // input data
         boolean ageKindergarten = ageHuman > 2 && ageHuman < 6;
         boolean ageSchool = ageHuman > 7 && ageHuman < 17;
-        boolean ageUniversity= ageHuman >= 18 && ageHuman <= 24;
-        boolean ageWork= ageHuman > 24;
+        boolean ageUniversity = ageHuman >= 18 && ageHuman <= 24;
+        boolean ageWork = ageHuman > 24;
         if (ageKindergarten) {
             System.out.println("«Если возраст человека равен " + ageHuman + ", то ему нужно ходить в детский сад».");
         } else if (ageSchool) {
@@ -55,7 +55,7 @@ public class Main {
         int numberHuman = 101; // input data
         int numberHumanOneTrainCarriage = 102;
         int numberSeats = 60;
-        if (numberHuman <= numberSeats && numberHuman >=1) {
+        if (numberHuman <= numberSeats && numberHuman >= 1) {
             System.out.println("В вагоне есть сидячие места");
         } else if (numberHuman < numberSeats && numberHuman <= numberHumanOneTrainCarriage) {
             System.out.println("В вагоне есть стоячие места");
@@ -76,8 +76,6 @@ public class Main {
         } else {
             System.out.println("Все числа равны");
         }
-
-
 
 
     }
