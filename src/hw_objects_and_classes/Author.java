@@ -1,8 +1,8 @@
 package hw_objects_and_classes;
 
 public class Author {
-    String author;
-    String surname;
+    private String author;
+    private String surname;
 
     public Author(String author, String surname) {
         this.author = author;
