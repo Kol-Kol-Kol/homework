@@ -1,9 +1,9 @@
 package hw_objects_and_classes;
 
 public class Book {
-    String nameBook;
-    Author name;
-    int yearOfPublication;
+    private String nameBook;
+    private Author name;
+    private int yearOfPublication;
 
 
     public Book(String nameBook, Author name, int yearOfPublication) {
