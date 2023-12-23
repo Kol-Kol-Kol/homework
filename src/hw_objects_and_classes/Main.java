@@ -9,6 +9,5 @@ public class Main {
         Book book2 = new Book("Садовник убийца", author2, 2023);
 
         book2.setYearOfPublication(2022);
-
     }
 }
