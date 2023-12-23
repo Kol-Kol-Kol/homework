@@ -3,14 +3,14 @@ package hw_objects_and_classes;
 import java.util.Objects;
 
 public class Book {
-    String nameBook;
-    Author name;
-    int yearOfPublication;
+    private String nameBook;
+    private Author author;
+    private int yearOfPublication;
 
 
     public Book(String nameBook, Author name, int yearOfPublication) {
         this.nameBook = nameBook;
-        this.name = name;
+        this.author = name;
         this.yearOfPublication = yearOfPublication;
     }
 
@@ -21,7 +21,7 @@ public class Book {
     @Override
     public String toString() {
         return "Наименование книги = " + nameBook +
-                ", " + name.toString() +
+                ", " + author.toString() +
                 ", Год публикации книги = " + yearOfPublication;
     }
 
@@ -30,16 +30,16 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return yearOfPublication == book.yearOfPublication && Objects.equals(nameBook, book.nameBook) && Objects.equals(name, book.name);
+        return yearOfPublication == book.yearOfPublication && Objects.equals(nameBook, book.nameBook) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameBook, name, yearOfPublication);
+        return Objects.hash(nameBook, author, yearOfPublication);
     }
 
-    public Author getName() {
-        return name;
+    public Author getAuthor() {
+        return author;
     }
 
     public int getYearOfPublication() {

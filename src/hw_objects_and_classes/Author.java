@@ -3,8 +3,8 @@ package hw_objects_and_classes;
 import java.util.Objects;
 
 public class Author {
-    String name;
-    String surname;
+    private String name;
+    private String surname;
 
     public Author(String name, String surname) {
         this.name = name;
