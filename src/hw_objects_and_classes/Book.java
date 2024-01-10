@@ -2,13 +2,13 @@ package hw_objects_and_classes;
 
 public class Book {
     private String nameBook;
-    private Author name;
+    private Author author;
     private int yearOfPublication;
 
 
     public Book(String nameBook, Author name, int yearOfPublication) {
         this.nameBook = nameBook;
-        this.name = name;
+        this.author = name;
         this.yearOfPublication = yearOfPublication;
     }
 
@@ -17,7 +17,7 @@ public class Book {
     }
 
     public Author getName() {
-        return name;
+        return author;
     }
 
     public int getYearOfPublication() {
