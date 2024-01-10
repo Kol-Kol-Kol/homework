@@ -1,16 +1,16 @@
 package hw_objects_and_classes;
 
 public class Author {
-    private String author;
+    private String name;
     private String surname;
 
     public Author(String author, String surname) {
-        this.author = author;
+        this.name = author;
         this.surname = surname;
     }
 
     public String getName() {
-        return author;
+        return name;
     }
 
     public String getSurname() {
