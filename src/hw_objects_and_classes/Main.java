@@ -7,7 +7,6 @@ public class Main {
 
         Book book1 = new Book("Война и мир", author1, 1873);
         Book book2 = new Book("Садовник убийца", author2, 2023);
-
         book2.setYearOfPublication(2022);
 
     }
